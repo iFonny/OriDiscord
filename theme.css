@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.12";
+  content: "Theme version: 1.0.4.19";
 }
 
 
@@ -20,6 +20,7 @@
   --light-secondary: #ecf0f1;
   --light-highlight: #9E9E9E;
   --light-dark-text: #2e3136;
+  --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
 }
 
 .theme-dark .messages-wrapper .messages .divider span,
@@ -59,6 +60,10 @@
   background: transparent;
   background-color: transparent;
   border-color: transparent;
+}
+
+.theme-dark .ui-card-primary.editable {
+  background: rgba(0, 0, 0, 0);
 }
 
 .ui-standard-sidebar-view .sidebar-region .sidebar {
@@ -201,6 +206,39 @@
 
 
 /* END: User Settings */
+
+
+/* NSFW */
+
+
+/* BOTH */
+
+.flex-justify-center {
+  background-color: var(--dark-primary);
+}
+
+.theme-dark .chat>.content>.flex-justify-center {
+  background: transparent;
+}
+
+.theme-dark .ui-guild-nsfw .image,
+.theme-light .ui-guild-nsfw .image {
+  background-image: var(--nsfw-image);
+}
+
+.theme-dark .ui-guild-nsfw .title,
+.theme-light .ui-guild-nsfw .title {
+  font-size: 0;
+}
+
+.theme-dark .ui-guild-nsfw .title::before,
+.theme-light .ui-guild-nsfw .title::before {
+  content: "Oh nose... NSFW!";
+  font-size: 30px;
+}
+
+
+/* END: NSFW */
 
 
 /* Header */
@@ -1376,11 +1414,15 @@
 }
 
 .theme-dark .message-group .comment .markup pre code {
-  background: #1A1C1F;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .theme-dark .message-group .comment .markup pre {
   border: 2px solid #1A1C1F;
+}
+
++.theme-dark .message-group .comment .markup pre {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .theme-dark .invite-button {
@@ -1388,9 +1430,19 @@
   border-color: #1A1C1F;
 }
 
++.theme-dark .invite-button {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0);
+}
+
 .theme-dark .message-group .embed {
   background-color: rgba(26, 28, 31, 1);
   border-color: rgba(26, 28, 31, 1);
+}
+
++.theme-dark .message-group .embed {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -1498,11 +1550,6 @@
 
 .theme-dark .message-group .comment .markup {
   color: hsla(0, 0%, 100%, .7) !important;
-}
-
-.theme-dark .message-group .comment .markup code.inline,
-.theme-dark .message-group .comment .markup pre code {
-  background: #1A1C1F;
 }
 
 
@@ -2710,6 +2757,16 @@
 /* LIGHT */
 
 
+/* BOTH */
+
+.ui-flex.flex-horizontal-reverse>.ui-flex,
+.ui-flex.flex-horizontal-reverse>.ui-flex-child,
+.ui-flex.flex-horizontal>.ui-flex,
+.ui-flex.flex-horizontal>.ui-flex-child {
+  background: transparent;
+}
+
+
 /* END: Server Settings */
 
 
@@ -3148,6 +3205,10 @@
 .chat .title-wrap .topic,
 .theme-dark .search-results-wrap .search-result .hit {
   color: rgba(255, 255, 255, 0.8)!important;
+}
+
+.theme-dark .chat>.content>.flex-justify-center {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .theme-dark .chat .private-channel-call {
