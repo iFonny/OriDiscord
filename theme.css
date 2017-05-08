@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.04";
+  content: "Theme version: 1.0.4.07";
 }
 
 
@@ -366,8 +366,13 @@
   border-color: var(--dark-secondary);
 }
 
+#user-profile-modal {
+  border-radius: 0;
+}
+
 #user-profile-modal .header {
   background-color: var(--dark-highlight);
+  border-radius: 0;
   background-image: none;
 }
 
@@ -376,7 +381,7 @@
 }
 
 #user-profile-modal .scroller {
-  background-color: var(--dark-secondary);
+  background: var(--dark-secondary);
   border-bottom: 0;
 }
 
@@ -823,6 +828,22 @@
     transform: translateX(0px);
     opacity: 1;
   }
+}
+
+.small-popout-box {
+  border-radius: 0;
+  color: #fff;
+  background: var(--dark-primary);
+  border: 0;
+}
+
+.option-popout .btn-item {
+  color: #fff;
+}
+
+.option-popout .btn-item:hover {
+  background: var(--dark-secondary);
+  color: #fff;
 }
 
 .context-menu {
@@ -1660,6 +1681,7 @@
 }
 
 .need-help-modal .header {
+  border-radius: 0;
   background-color: var(--dark-highlight);
   color: var(--dark-highlight);
 }
@@ -1671,6 +1693,7 @@
 .need-help-modal .footer {
   background-color: var(--dark-highlight);
   border-top: none;
+  border-radius: 0;
   color: white;
 }
 
@@ -1996,10 +2019,15 @@
 
 /* BOTH */
 
+.markdown-modal .markdown-modal-header {
+  text-align: center;
+}
+
 .markdown-modal,
 .markdown-modal .markdown-modal-header {
   background-color: var(--dark-highlight);
   color: #fff;
+  border-radius: 0;
   border-bottom: none;
 }
 
@@ -2203,6 +2231,10 @@
   background: var(--dark-secondary) !important;
 }
 
+.roles-list-popout {
+  background-color: var(--dark-primary)
+}
+
 .notification-settings-modal .notification-settings-modal-channel-settings-list {
   box-shadow: 0 -1px var(--dark-primary);
 }
@@ -2330,6 +2362,22 @@
 
 .form .control-group label {
   color: grey;
+}
+
+.form .control-groups>.control-group {
+  color: #fff;
+}
+
+.settings .settings-inner .settings-panel {
+  color: #fff;
+}
+
+#rtc-debug-modal #users-section .selected-user .scroller {
+  color: #fff;
+}
+
+#rtc-debug-modal #users-section .user-list li.selected {
+  background: var(--dark-primary);
 }
 
 .form hr {
