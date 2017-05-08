@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.02";
+  content: "Theme version: 1.0.4.04";
 }
 
 
@@ -357,6 +357,11 @@
 
 /* BOTH | This one can't be used on light and dark, must define both */
 
+.avatar-profile {
+  background-size: 128px 128px;
+  margin-top: -29px;
+}
+
 .avatar-profile .status {
   border-color: var(--dark-secondary);
 }
@@ -366,9 +371,18 @@
   background-image: none;
 }
 
+#user-profile-modal .header .header-info {
+  margin-top: -30px;
+}
+
 #user-profile-modal .scroller {
   background-color: var(--dark-secondary);
   border-bottom: 0;
+}
+
+#user-profile-modal .tab-bar {
+  margin-left: -185px;
+  margin-top: 0px;
 }
 
 #user-profile-modal .tab-bar-container {
@@ -762,7 +776,7 @@
 .theme-light .status-picker.popout-menu,
 .theme-dark .status-picker.popout-menu {
   background-color: var(--dark-highlight) !important;
-  border-radius: 0;
+  border-radius: 10px;
   animation: status-picker 600ms ease-in-out!important;
 }
 
@@ -2084,6 +2098,28 @@
 
 /* BOTH */
 
+@-webkit-keyframes status-picker {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes server-settings {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .guild-channels {
   background-color: var(--dark-primary);
 }
@@ -2129,12 +2165,6 @@
   padding: 10px 30px 10px 20px;
 }
 
-.popout.popout-bottom {
-  margin: 0px!important;
-  width: 240px!important;
-  left: 190px!important;
-}
-
 .guild-header header:hover {
   background-color: var(--dark-secondary);
 }
@@ -2157,7 +2187,9 @@
 
 .theme-dark .popout-menu {
   background: var(--dark-secondary);
-  border-radius: 0;
+  animation: server-settings 500ms ease-in-out;
+  border-radius: 10px;
+  border: 3px solid var(--dark-highlight);
 }
 
 
