@@ -1424,6 +1424,11 @@
   border: none;
 }
 
+.theme-dark .message-group.is-local-bot-message {
+  background-image: none;
+  box-shadow: none;
+}
+
 .channel-textarea-upload {
   border: none;
 }
@@ -1505,6 +1510,15 @@
   border: none;
 }
 
+.invite-button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 0;
+}
+
+.invite-button-header {
+  color: #fff;
+}
+
 
 /* DARK */
 
@@ -1563,15 +1577,12 @@
 }
 
 .theme-dark .message-group .comment .markup pre code {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .theme-dark .message-group .comment .markup pre {
-  border: 2px solid #1A1C1F;
-}
-
-+.theme-dark .message-group .comment .markup pre {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .theme-dark .invite-button {
@@ -1657,6 +1668,28 @@
   left: inherit;
 }
 
+@-webkit-keyframes blocked-appear {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes blocked-appear {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 #app-mount>div>div.modal-container>div.modal>div>form>div.form-inner>div>div.comment>div>div.body>div>div.markup {
   color: white;
 }
@@ -1699,6 +1732,31 @@
 
 .theme-dark .message-group .comment .markup {
   color: hsla(0, 0%, 100%, .7) !important;
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn,
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+  transition: all 250ms ease;
+  border: 0;
+  box-shadow: transparent;
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed>.message-group:not(.has-divider) {
+  animation: blocked-appear 500ms ease-in-out;
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
+  background: var(--dark-primary);
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+  background: var(--dark-primary);
+  color: #ccc;
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+  background: var(--dark-primary);
+  color: #ccc;
 }
 
 
@@ -2346,6 +2404,10 @@
 
 /* BOTH */
 
+.user-popout-banned-video {
+  display: none;
+}
+
 .alert.form.has-icon:before {
   background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
   border-radius: 0;
@@ -2934,6 +2996,11 @@
 
 /* BOTH */
 
+.ui-flex.flex-horizontal-reverse>.ui-flex-child:first-child,
+.ui-flex.flex-horizontal-reverse>.ui-flex-child:last-child {
+  background: transparent;
+}
+
 
 /* END: Server Settings */
 
@@ -3433,6 +3500,49 @@
 .account {
   background-color: rgba(0, 0, 0, 0.0);
   box-shadow: none;
+}
+
+.theme-dark .ui-standard-sidebar-view .content-region,
+.theme-dark .ui-standard-sidebar-view,
+.scroller-wrap,
+.theme-dark .ui-standard-sidebar-view .sidebar-region,
+.ui-standard-sidebar-view .content-region .scroller-wrap,
+.theme-dark .ui-standard-sidebar-view .content-region .scroller,
+.ui-standard-sidebar-view .content-column.default,
+.theme-dark .ui-standard-sidebar-view .content-region {
+  background: transparent;
+}
+
+.theme-dark .ui-standard-sidebar-view .sidebar-region .scroller,
+.theme-dark .ui-standard-sidebar-view .content-region .scrollbar,
+.ui-standard-sidebar-view {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.theme-light .ui-standard-sidebar-view .content-region,
+.theme-light .ui-standard-sidebar-view,
+.scroller-wrap,
+.theme-light .ui-standard-sidebar-view .sidebar-region,
+.ui-standard-sidebar-view .content-region .scroller-wrap,
+.theme-light .ui-standard-sidebar-view .content-region .scroller,
+.ui-standard-sidebar-view .content-column.default,
+.theme-light .ui-standard-sidebar-view .content-region {
+  background: transparent;
+}
+
+.theme-light .ui-tab-bar-item {
+  color: #000;
+}
+
+.theme-light .ui-form-title {
+  color: #fff;
+}
+
+.theme-light .ui-standard-sidebar-view .sidebar-region .scroller,
+.theme-light .ui-standard-sidebar-view .content-region .scrollbar,
+.ui-standard-sidebar-view {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
 }
 
 
