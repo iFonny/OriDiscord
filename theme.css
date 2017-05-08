@@ -2568,6 +2568,22 @@
   color: #fff;
 }
 
+.notification-settings-modal .settings-section,
+.form .control-groups+.control-groups {
+  background: var(--dark-highlight);
+  margin-top: 0;
+}
+
+.notification-settings-modal .notification-settings-modal-channel-settings-header,
+.notification-settings-modal .notification-settings-modal-channel-settings-list {
+  background: var(--dark-primary);
+}
+
+.deprecated-settings-modal .settings-actions {
+  border-top: 0;
+  background-color: var(--dark-secondary);
+}
+
 .channel-mute-button {
   opacity: 0.7;
 }
