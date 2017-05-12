@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.53";
+  content: "Theme version: 1.0.4.57";
 }
 
 
@@ -277,7 +277,19 @@
 
 /* BOTH */
 
+.ui-flex>.flex-nowrap {
+  background: var(--dark-secondary);
+}
+
+.ui-guild-nsfw>.flex-nowrap {
+  background: transparent;
+}
+
 .theme-dark .chat>.content>.flex-justify-center {
+  background: transparent;
+}
+
+.theme-dark .chat>.content>.flex-justify-center>.ui-guild-nsfw {
   background: transparent;
 }
 
@@ -2382,10 +2394,6 @@
   background: transparent;
 }
 
-.ui-flex>.flex-nowrap {
-  background: var(--dark-secondary);
-}
-
 .modal-content {
   background-color: transparent;
 }
@@ -2633,6 +2641,10 @@
 
 /* Server Settings */
 
+.ui-audit-log .title-time-wrap {
+  background: transparent;
+}
+
 .settings .settings-inner,
 .settings .settings-right {
   background: var(--dark-secondary) !important;
@@ -2650,6 +2662,21 @@
 .form .control-groups+.control-groups {
   background: var(--dark-highlight);
   margin-top: 0;
+}
+
+.ui-standard-sidebar-view .custom-scroller>div {
+  z-index: 2;
+}
+
+.theme-dark .ui-hover-card:before {
+  background: transparent;
+  border: 0;
+  border-left: 2px solid #fff;
+  z-index: 1;
+}
+
+div[class="ui-tab-bar-item guild-role selected"]>.ui-flex>.flex-nowrap {
+  background: transparent;
 }
 
 .notification-settings-modal .notification-settings-modal-channel-settings-header,
@@ -3554,6 +3581,10 @@
 
 .theme-dark .chat>.content>.flex-justify-center {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.ui-flex>.flex-nowrap {
+  background: transparent;
 }
 
 .theme-dark .chat .private-channel-call {
