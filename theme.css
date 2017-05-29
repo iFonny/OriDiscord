@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.57";
+  content: "Theme version: 1.0.4.60";
 }
 
 
@@ -272,14 +272,42 @@
 /* END: User Settings */
 
 
-/* NSFW */
+/* Reaction */
 
 
 /* BOTH */
 
-.ui-flex>.flex-nowrap {
-  background: var(--dark-secondary);
+.message-reactions-modal {
+  background: transparent;
 }
+
+.message-reactions-modal .message-reactions-reactors .reactor .name,
+.message-reactions-modal .message-reactions-list-inner .reaction .count {
+  color: #fff;
+}
+
+.message-reactions-modal .message-reactions-reactors .reactor {
+  box-shadow: none;
+}
+
+.message-reactions-modal .message-reactions-list .scroller,
+.message-reactions-modal .message-reactions-list-inner {
+  background-color: var(--dark-highlight);
+  border-radius: 0;
+}
+
+.message-reactions-modal .message-reactions-reactors {
+  background-color: var(--dark-primary);
+}
+
+
+/* END: Reaction */
+
+
+/* NSFW */
+
+
+/* BOTH */
 
 .ui-guild-nsfw>.flex-nowrap {
   background: transparent;
@@ -2291,11 +2319,6 @@
   border-bottom: none;
 }
 
-.form .form-inner strong {
-  color: var(--accent);
-  font-weight: bold;
-}
-
 .form .form-actions {
   background: var(--dark-secondary);
   border-top: none;
@@ -2339,6 +2362,10 @@
 
 
 /* BOTH */
+
+.webhook-modal-footer {
+  background-color: var(--dark-secondary);
+}
 
 .theme-light .ui-form-title.h5,
 .theme-light .ui-select .Select-value-label {
@@ -3125,6 +3152,22 @@ div[class="ui-tab-bar-item guild-role selected"]>.ui-flex>.flex-nowrap {
 
 .theme-dark .ui-color-picker-custom {
   background: var(--dark-primary);
+}
+
+.theme-dark .ui-search-bar {
+  background-color: var(--dark-primary);
+}
+
+.theme-dark .elevation-border-low {
+  background: var(--dark-highlight);
+}
+
+.theme-dark .ui-selectable-item+.ui-flex>.flex-nowrap {
+  background: transparent;
+}
+
+.theme-dark .ui-selectable-item:hover {
+  background: var(--dark-secondary);
 }
 
 
