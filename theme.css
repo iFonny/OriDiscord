@@ -4418,11 +4418,11 @@ img[alt*=":hourglass:"] {
 /* Settings */
 
 .app {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.50);
 }
 
 body {
-  background: url("https://images7.alphacoders.com/728/728990.jpg");
+  background: url("https://i.imgur.com/6KZ7UK7.jpg");
   /* Advanced settings */
   background-size: cover;
   background-attachment: fixed;
