@@ -45,6 +45,14 @@
 /* End GLOBAL */
 
 
+/* TEMP. FIX, thanks Discord :( */
+
+.channels-wrap div[class*="container-"]+div[class*="container-"],
+.private-channels+div[class*="container-"] {
+  background-color: var(--dark-highlight);
+}
+
+
 /* Loading/Connecting */
 
 .connecting {
@@ -2260,6 +2268,11 @@ div[class*="content-"]:not(.content-region) {
 
 .private-channels .channel.selected .icon-friends {
   background-color: var(--accent);
+}
+
+.theme-dark .private-channel-call,
+.theme-dark .ui-video {
+  background-color: var(--dark-highlight);
 }
 
 #friends .friends-table {
