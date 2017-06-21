@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.72";
+  content: "Theme version: 1.0.4.78";
 }
 
 
@@ -2267,7 +2267,7 @@ div[class*="content-"]:not(.content-region) {
 }
 
 .private-channels .channel.selected .icon-friends {
-  background-color: var(--accent);
+  background-color: transparent;
 }
 
 .theme-dark .private-channel-call,
@@ -3085,6 +3085,14 @@ div[class="ui-tab-bar-item guild-role selected"]>.ui-flex>.flex-nowrap {
   background: transparent;
 }
 
+#instant-invite-modal .form-header {
+  background-color: var(--dark-highlight);
+}
+
+.form.deprecated .form-inner {
+  background-color: var(--dark-primary);
+}
+
 .instant-invites .instant-invites-list .instant-invite .channel {
   color: #fff;
 }
@@ -3537,6 +3545,39 @@ div[class="ui-tab-bar-item guild-role selected"]>.ui-flex>.flex-nowrap {
 
 
 /* END: Upload Drop Area */
+
+
+/* Random CSS Meme */
+
+.create-guild-container.deprecated {
+  background-color: var(--dark-highlight);
+}
+
+.create-guild-container.deprecated .form.deprecated .form-inner {
+  background-color: transparent;
+}
+
+.create-guild-container.deprecated .action {
+  background-color: var(--dark-primary);
+}
+
+div[class*="modal-"] div[class*="header-"] {
+  background-color: var(--dark-highlight);
+}
+
+.theme-dark div[class*="footer-"] {
+  background-color: var(--dark-secondary);
+}
+
+video[autoplay] {
+  display: none;
+}
+
+div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
+  background-color: var(--dark-primary);
+  border-radius: 0;
+  padding-top: 5px;
+}
 
 
 /* START: wideGuilds */
