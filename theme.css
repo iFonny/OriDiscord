@@ -341,18 +341,6 @@
   background: transparent;
 }
 
-
-/* NEW CHANNELS FIX  [Thanks Maxie and Charles]*/
-
-div[class*="container-"],
-div[class*="content-"]:not(.content-region) {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
-.theme-dark .chat>.content>.flex-justify-center {
-  background: transparent;
-}
-
 .theme-dark .chat>.content>.flex-justify-center>.ui-guild-nsfw {
   background: transparent;
 }
@@ -1701,8 +1689,18 @@ theme-dark div[class*="image-"] {
   border-radius: 0;
   padding-top: 5px;
   padding-bottom: 4px;
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.theme-brand div[class*="inner-"] {
+  background: var(--dark-highlight);
+}
+
+.emoji,
+.emoji.jumboable {
+  border-radius: 4px;
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.3));
 }
 
 .theme-dark .channel-text-area-default div[class*="autocomplete-"] {
@@ -3638,6 +3636,60 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 }
 
 
+/* Snazzah - Citador */
+
+.quote-msg .message-group {
+  margin-bottom: 0px!important;
+}
+
+.theme-dark .quote-msg {
+  background-color: var(--dark-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.theme-dark .quote-msg+.innerEnabled-gLHeOL {
+  border-top: 1px solid rgba(255, 255, 255, 0.1)!important;
+}
+
+.theme-light .quote-msg {
+  background-color: var(--light-primary);
+}
+
+
+/* Snazzah - DiscordCardsDashboard */
+
+.theme-dark .dc-user-options,
+.theme-dark .dc-inv {
+  background: var(--dark-primary);
+}
+
+.dc-user-options,
+.dc-inv {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .16);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .16);
+}
+
+.theme-dark .dc-flex .message-group-blocked-btn {
+  background: var(--dark-primary);
+  color: #ccc;
+  transition: all 250ms ease;
+  border: 0;
+  box-shadow: transparent;
+}
+
+.theme-dark .dc-flex .message-group-blocked:hover {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+}
+
+
+/* Snazzah - DiscodInjections CommandHandler */
+
+.theme-dark .channel-text-area-default .di-autocomplete-commandinfo {
+  background: transparent!important;
+}
+
+
 /* START: wideGuilds */
 
 
@@ -3841,12 +3893,16 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
   color: rgba(255, 255, 255, 0.8)!important;
 }
 
-.theme-dark .chat>.content>.flex-justify-center {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.ui-flex>.flex-nowrap {
-  background: transparent;
+div[class*="container-"],
+div[class*="content-"]:not(.content-region),
+.theme-dark .chat>.content>.flex-justify-center,
+.ui-flex>.flex-nowrap,
+#rtc-connection .btn,
+#rtc-connection .btn-group,
+#rtc-connection .btn-disconnect {
+  background: transparent!important;
+  border: none;
+  box-shadow: none;
 }
 
 .theme-dark .chat .private-channel-call {
@@ -3856,14 +3912,6 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 #rtc-connection {
   background: rgba(0, 0, 0, 0.3);
   border-top: none;
-}
-
-#rtc-connection .btn,
-#rtc-connection .btn-group,
-#rtc-connection .btn-disconnect {
-  background: transparent;
-  border: none;
-  box-shadow: none;
 }
 
 .message-group-blocked {
