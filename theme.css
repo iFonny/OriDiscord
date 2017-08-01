@@ -47,13 +47,13 @@
 
 /* TEMP. FIX, thanks Discord :( */
 
-.channels-wrap div[class*="container-"]+div[class*="container-"],
 .private-channels+div[class*="container-"] {
   background-color: var(--dark-highlight);
 }
 
 .channels-wrap>div[class*="container-"] {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: var(--dark-primary);
   border-bottom: 0;
 }
 
@@ -1844,6 +1844,10 @@ theme-dark div[class*="image-"] {
 div[class*="scrollerWrap-"],
 div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
   background: transparent !important;
+}
+
+.channels-wrap>div[class*="container-"] {
+  background: transparent!important;
 }
 
 .theme-dark .friends-table .messages .divider:before,
@@ -3704,6 +3708,13 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 
 .theme-dark .channel-text-area-default .di-autocomplete-commandinfo {
   background: transparent!important;
+}
+
+
+/* Snazzah - BetterFormattingRedux */
+
+.bf-toolbar:before {
+  background: var(--dark-highlight)!important;
 }
 
 
