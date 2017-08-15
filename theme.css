@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.88";
+  content: "Theme version: 1.0.4.92";
 }
 
 
@@ -1681,6 +1681,11 @@ theme-dark div[class*="image-"] {
   border-color: rgba(0, 0, 0, 0);
 }
 
+.upload-modal div[class*="autocomplete-"] {
+  background: var(--dark-primary);
+  color: #fff;
+}
+
 .channel-text-area-default {
   margin: 0 0 0;
 }
@@ -2081,6 +2086,21 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
   border-radius: 0;
   border-bottom: 2px solid #696969;
   background: transparent;
+}
+
+.need-help-modal.deprecated .header {
+  background-color: var(--dark-highlight);
+}
+
+.need-help-modal.deprecated .footer {
+  background-color: var(--dark-secondary);
+  border-top: 0;
+}
+
+.need-help-modal.deprecated .header input[type=text] {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .need-help-modal .header input[type=text]:focus {
@@ -2846,6 +2866,26 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 div[class="ui-tab-bar-item guild-role selected"]>.ui-flex>.flex-nowrap {
   background: transparent;
+}
+
+div[class*="side-"] div[class*="item-"],
+div[class*="side-"] div[class*="item-"]:hover {
+  transition: all 200ms ease;
+}
+
+div[class*="side-"] div[class*="item-"]:hover {
+  transform: translateX(0.4em);
+}
+
+.ui-standard-sidebar-view div[class*="itemDefaultSelected-"] {
+  background: #2ecc71;
+  transform: translateX(0.4em);
+}
+
+.theme-dark div[class*="cardPrimaryEditable-"] {
+  background: var(--dark-highlight);
+  border-radius: 5px;
+  transition: all 350ms ease;
 }
 
 .notification-settings-modal .notification-settings-modal-channel-settings-header,
@@ -3615,6 +3655,7 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 
 /* Selfish part xD */
 
+/*
 #user-profile-modal .avatar-wrapper div[style*="background-image: url(\"https://cdn.discordapp.com/avatars/86477779717066752"] .status {
   position: absolute;
   z-index: 10000;
@@ -3632,7 +3673,7 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
   color: #fff;
   font-weight: bold;
 }
-
+*/
 
 /* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
 
@@ -3715,6 +3756,41 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 
 .bf-toolbar:before {
   background: var(--dark-highlight)!important;
+}
+
+
+/* Snazzah - LineStickers */
+
+.theme-dark #bda-qem-line-container,
+.theme-dark #bda-qem-line-container .preview-container .preview-wrapper {
+  background-color: var(--dark-primary)!important;
+  border-color: var(--dark-highlight)!important;
+}
+
+.theme-dark #bda-qem-line-container .emote-container:hover {
+  background-color: var(--dark-secondary)!important;
+  border-color: var(--dark-secondary)!important;
+}
+
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar,
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-track,
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-track-piece {
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-primary) !important;
+}
+
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-thumb {
+  border-color: var(--dark-highlight) !important;
+  background-color: var(--dark-highlight) !important;
+}
+
+.theme-dark #bda-qem-line-container .add-pack {
+  opacity: 0.2 !important;
+  filter: invert(1);
+}
+
+.theme-dark #bda-qem-line-container .item:hover .add-pack {
+  opacity: 0.5 !important;
 }
 
 
