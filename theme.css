@@ -657,8 +657,13 @@ div[class*="userPopout-"] .footer {
   margin-top: -29px;
 }
 
-.avatar-profile .status {
-  border-color: var(--dark-secondary);
+.avatar-profile .status,
+#user-profile-modal .guilds .guild .status,
+.channel-members .member .status,
+.container-iksrDt .status,
+.private-channels .status {
+  border-color: transparent!important;
+  transform: scale(1.3);
 }
 
 #user-profile-modal {
@@ -1264,7 +1269,7 @@ div[class*="userPopout-"] .footer {
 
 .create-guild-container .form-actions .btn-default:hover {
   transition: all 500ms ease;
-  box-shadow: inset 6.5em 0 0 0 #e74c3c;
+  box-shadow: inset 8.5em 0 0 0 #e74c3c;
 }
 
 @-webkit-keyframes server-create-enter {
@@ -1451,6 +1456,10 @@ div[class*="userPopout-"] .footer {
 
 #rtc-connection .btn-info:after {
   background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg");
+}
+
+.theme-dark #rtc-connection-popout hr {
+  border-color: var(--dark-primary);
 }
 
 .account .btn-mute,
@@ -1986,17 +1995,19 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 /* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
 
-.modal .modal-inner .modal-image a {
+.modal-image a {
   background: var(--dark-highlight);
   padding-left: 10px;
+  width: calc(100% - 20px);
   border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.modal .modal-inner .modal-image a:hover {
+.modal-image a:hover {
   background: var(--dark-highlight);
   color: #2196F3;
   opacity: 1;
   padding-left: 20px;
+  width: calc(100% - 30px);
 }
 
 
@@ -2896,6 +2907,19 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
   background: transparent;
 }
 
+.dark-elevation-border-high,
+.theme-dark .elevation-border-high {
+  background-color: var(--dark-highlight);
+}
+
+.theme-dark .scrollerThemed-19vinI.themeGhostHairline-2H8SiW .scroller-fzNley::-webkit-scrollbar-thumb {
+  background-color: var(--dark-primary);
+}
+
+.theme-dark .scrollerThemed-19vinI.themeGhostHairline-2H8SiW .scroller-fzNley::-webkit-scrollbar-track {
+  background-color: var(--dark-secondary);
+}
+
 .settings .settings-inner,
 .settings .settings-right {
   background: var(--dark-secondary) !important;
@@ -2907,6 +2931,15 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 .channel-notification-settings .content label {
   color: #fff;
+}
+
+.theme-dark .ui-region-selector {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, .3);
+}
+
+.theme-dark .ui-region-selector .layout {
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .notification-settings-modal .settings-section,
@@ -3756,13 +3789,8 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.db-prefix {
-  color: rgba(255, 255, 255, 0.8)!important;
-}
-
-.user-popout .header .member-roles {
-  width: 100%;
-  padding-left: 272px;
+.with-background .headerText-3tKBWq {
+  background-color: rgba(0, 0, 0, 0.4)!important;
 }
 
 
@@ -3858,6 +3886,41 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 }
 
 .theme-dark #bda-qem-line-container .item:hover .add-pack {
+  opacity: 0.5 !important;
+}
+
+
+/* Snazzah - TelegramStickers */
+
+.theme-dark #bda-qem-telegram-container,
+.theme-dark #bda-qem-telegram-container .preview-container .preview-wrapper {
+  background-color: var(--dark-primary)!important;
+  border-color: var(--dark-highlight)!important;
+}
+
+.theme-dark #bda-qem-telegram-container .emote-container:hover {
+  background-color: var(--dark-secondary)!important;
+  border-color: var(--dark-secondary)!important;
+}
+
+.theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar,
+.theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar-track,
+.theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar-track-piece {
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-primary) !important;
+}
+
+.theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar-thumb {
+  border-color: var(--dark-highlight) !important;
+  background-color: var(--dark-highlight) !important;
+}
+
+.theme-dark #bda-qem-telegram-container .add-pack {
+  opacity: 0.2 !important;
+  filter: invert(1);
+}
+
+.theme-dark #bda-qem-telegram-container .item:hover .add-pack {
   opacity: 0.5 !important;
 }
 
