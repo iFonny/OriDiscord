@@ -2,7 +2,7 @@
 .theme-light .user-settings-account:after {
   color: var(--accent);
   font-weight: bold;
-  content: "Theme version: 1.0.4.92";
+  content: "Theme version: 1.0.4.98";
 }
 
 
@@ -405,6 +405,19 @@ theme-dark div[class*="image-"] {
   display: block;
 }
 
+div[class*="modal-"] h4[class*="defaultColor-"] {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: none;
+  text-align: center;
+}
+
+div[class*="modal-"] div[class*="scroller-"]>div[class*="primary-"] {
+  color: #fff;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
 
 /* END: Header */
 
@@ -564,6 +577,58 @@ theme-dark div[class*="image-"] {
 }
 
 .user-popout .footer {
+  background: var(--dark-secondary);
+  border-top: none;
+}
+
+.quick-message,
+.quick-message.isBlocked {
+  background: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+}
+
+
+/* Canary shit */
+
+div[class*="userPopout-"] {
+  animation: user-popout-anim 350ms ease-in-out;
+}
+
+div[class*="userPopout-"] div[class*="body-"] {
+  border-bottom: 0;
+}
+
+div[class*="userPopout-"] div[class*="headerNormal-"] {
+  background: var(--dark-highlight);
+}
+
+div[class*="userPopout-"] div[class*="avatarWrapperNormal-"] div[class*="avatarNormal-"] {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+div[class*="avatarStatusNormal-"] {
+  border: 0;
+}
+
+div[class*="userPopout-"] div[class*="avatarWrapperNormal-"] div[class*="avatarHint-"] {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: none;
+}
+
+.note textarea:focus {
+  background: var(--dark-highlight);
+}
+
+div[class*="userPopout-"] .body {
+  background: var(--dark-primary);
+}
+
+div[class*="userPopout-"] .footer {
   background: var(--dark-secondary);
   border-top: none;
 }
@@ -3647,13 +3712,14 @@ video[autoplay] {
 }
 
 div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-primary)!important;
   border-radius: 0;
   padding-top: 5px;
 }
 
 
 /* Selfish part xD */
+
 
 /*
 #user-profile-modal .avatar-wrapper div[style*="background-image: url(\"https://cdn.discordapp.com/avatars/86477779717066752"] .status {
@@ -3674,6 +3740,7 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
   font-weight: bold;
 }
 */
+
 
 /* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
 
