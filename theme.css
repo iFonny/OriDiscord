@@ -41,9 +41,13 @@
   color: #fff;
 }
 
+/* A uncomment sur windows j'imagine (font titleBar)
+
 #app-mount div[class*="titleBar-"] {
   background: var(--dark-highlight);
 }
+
+*/
 
 
 /* End GLOBAL */
@@ -1856,7 +1860,7 @@ div[class*="autocomplete-"]:after {
   margin-bottom: -30px;
   padding-top: 5px;
   padding-bottom: 4px;
-  background-color: var(--dark-secondary);
+  background-color: var(--dark-primary);
 }
 
 .theme-brand div[class*="inner-"] {
@@ -4476,6 +4480,10 @@ div[class*="channels-"],
 .theme-dark div[class*="title-"],
 .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
   background: transparent;
+}
+
+.private-channels .channel:hover a {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .message-group-blocked {
