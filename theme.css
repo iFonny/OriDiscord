@@ -1721,34 +1721,34 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   position: absolute;
 }
 
-.channel-textarea-autocomplete-inner {
+div[class*="autocomplete-"] {
   border: 0!important;
   border-radius: 0px;
   border-bottom: 0px;
   box-shadow: 0;
 }
 
-.channel-textarea-autocomplete-inner header {
+div[class*="autocomplete-"] header {
   border-bottom: 0px;
   margin-bottom: 5px;
 }
 
-.channel-textarea-autocomplete-inner ul {
+div[class*="autocomplete-"] ul {
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: 0px!important;
 }
 
-.channel-textarea-autocomplete-inner li.active {
+div[class*="autocomplete-"] li.active {
   border-radius: 0px;
 }
 
-.channel-textarea-autocomplete-inner li {
+div[class*="autocomplete-"] li {
   border-radius: 0px;
   margin-bottom: 2px;
 }
 
-.channel-textarea-autocomplete-inner:after {
+div[class*="autocomplete-"]:after {
   border: none;
 }
 
@@ -1798,23 +1798,23 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   display: none
 }
 
-.theme-dark .channel-textarea-autocomplete-inner {
+.theme-dark div[class*="autocomplete-"] {
   background-color: var(--dark-primary)!important;
 }
 
-.theme-dark .channel-textarea-autocomplete-inner header {
+.theme-dark div[class*="autocomplete-"] header {
   background-color: var(--dark-highlight)!important;
 }
 
-.theme-dark .channel-textarea-autocomplete-inner ul {
+.theme-dark div[class*="autocomplete-"] ul {
   background-color: var(--dark-primary)!important;
 }
 
-.theme-dark .channel-textarea-autocomplete-inner li.active {
+.theme-dark div[class*="autocomplete-"] li.active {
   background-color: var(--dark-secondary)!important;
 }
 
-.theme-dark .channel-textarea-autocomplete-inner li {
+.theme-dark div[class*="autocomplete-"] li {
   background-color: var(--dark-primary)!important;
 }
 
@@ -1895,27 +1895,27 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   color: var(--light-dark-text);
 }
 
-.channel-textarea-autocomplete-inner {
+div[class*="autocomplete-"] {
   background-color: var(--light-highlight)!important;
 }
 
-.channel-textarea-autocomplete-inner header {
+div[class*="autocomplete-"] header {
   background-color: var(--light-dark-text)!important;
 }
 
-.channel-textarea-autocomplete-inner ul {
+div[class*="autocomplete-"] ul {
   background-color: var(--light-highlight)!important;
 }
 
-.channel-textarea-autocomplete-inner li.active {
+div[class*="autocomplete-"] li.active {
   background-color: var(--light-highlight)!important;
 }
 
-.channel-textarea-autocomplete-inner li {
+div[class*="autocomplete-"] li {
   background-color: var(--light-highlight)!important;
 }
 
-.channel-textarea-autocomplete-inner li:hover {
+div[class*="autocomplete-"] li:hover {
   background-color: var(--light-primary)!important;
 }
 
@@ -3738,33 +3738,33 @@ div[class*="side-"] div[class*="item-"]:hover {
 
 /* Upload Area */
 
-.channel-textarea-autocomplete-inner {
+div[class*="autocomplete-"] {
   background-color: var(--dark-secondary)!important;
 }
 
-.channel-textarea-autocomplete-inner header {
+div[class*="autocomplete-"] header {
   font-size: 14px;
   color: var(--accent);
   background-color: var(--dark-highlight)!important;
 }
 
-.channel-textarea-autocomplete-inner ul li {
+div[class*="autocomplete-"] ul li {
   color: #ffffff!important;
 }
 
-.channel-textarea-autocomplete-inner ul li.active {
+div[class*="autocomplete-"] ul li.active {
   background-color: var(--dark-primary)!important;
 }
 
-.channel-textarea-autocomplete-inner ul {
+div[class*="autocomplete-"] ul {
   background-color: var(--dark-secondary)!important;
 }
 
-.channel-textarea-autocomplete-inner li.active {
+div[class*="autocomplete-"] li.active {
   background-color: var(--dark-secondary)!important;
 }
 
-.channel-textarea-autocomplete-inner li {
+div[class*="autocomplete-"] li {
   background-color: var(--dark-secondary)!important;
 }
 
