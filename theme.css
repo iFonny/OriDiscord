@@ -41,6 +41,10 @@
   color: #fff;
 }
 
+#app-mount div[class*="titleBar-"] {
+  background: var(--dark-highlight);
+}
+
 
 /* End GLOBAL */
 
@@ -55,6 +59,14 @@
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   background-color: var(--dark-primary);
   border-bottom: 0;
+}
+
+div[class*="nameDefault-"],
+div[class*="nameHovered-"],
+div[class*="nameCollapsed"],
+div[class*="nameHoveredCollapsed"] {
+  text-transform: none;
+  font-size: 15px;
 }
 
 
@@ -442,6 +454,10 @@ div[class*="modal-"] div[class*="scroller-"]>div[class*="primary-"] {
   color: #fff;
   padding-top: 5px;
   font-size: 14px;
+}
+
+div[class*="channels-"] div[class*="container-"]+div[class*="container-"] {
+  background: var(--dark-primary);
 }
 
 
@@ -1835,12 +1851,12 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   margin: 0 0 0;
 }
 
-.theme-dark .channel-text-area-default div[class*="inner-"] {
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
   border-radius: 0;
+  margin-bottom: -30px;
   padding-top: 5px;
   padding-bottom: 4px;
   background-color: var(--dark-secondary);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .theme-brand div[class*="inner-"] {
@@ -1914,6 +1930,10 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
 
 .divider.divider-red+.divider {
   display: none;
+}
+
+.theme-dark div[class*="title-"] {
+  background: var(--dark-primary);
 }
 
 .chat .jump-to-present-bar {
@@ -2448,6 +2468,8 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 .private-channels .search-bar {
   border-radius: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: var(--dark-highlight);
 }
 
@@ -3048,6 +3070,10 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 .delete-server-modal>.form-inner {
   color: #fff;
+}
+
+div[class*="header-"] {
+  text-transform: none;
 }
 
 .ui-standard-sidebar-view .custom-scroller>div {
@@ -3909,6 +3935,24 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 .markup .hljs::before {
   border-radius: 5px 5px 0 0;
 }
+
+
+/* Channel Notices */
+
+.theme-dark .channel-notices .channel-notice {
+  background-color: var(--dark-highlight);
+}
+
+.theme-dark .channel-notices .channel-notice .message div {
+  color: #fff;
+}
+
+.theme-dark .channel-notices .channel-notice .message button {
+  background-color: var(--dark-primary);
+}
+
+
+/* Channel Notices END */
 
 
 /* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
