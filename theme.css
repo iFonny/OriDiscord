@@ -386,6 +386,10 @@ theme-dark div[class*="image-"] {
   }
 }
 
+.header-toolbar .private-channel-call-btns-wrapper {
+  display: flex;
+}
+
 .header-toolbar button.popout-open span,
 .header-toolbar button.active {
   opacity: 1;
@@ -406,6 +410,10 @@ theme-dark div[class*="image-"] {
   transform: translate(0, 65px);
   margin-top: 2px;
   margin-left: 2px;
+}
+
+.header-toolbar button.popout-open span[style*='567632a2702aed0296e15d68d6cae738.svg']:before {
+  background-image: url("/assets/567632a2702aed0296e15d68d6cae738.svg");
 }
 
 @keyframes pin-icon {
@@ -2182,17 +2190,35 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
   }
 }
 
-.tooltip.tooltip-right.tooltip-normal,
-.tooltip.tooltip-bottom.tooltip-normal,
-.tooltip.tooltip-top.tooltip-normal {
+@-webkit-keyframes tooltip-left-anim {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes tooltip-left-anim {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.tooltip {
   background: rgba(22, 22, 22, 0.6);
   color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.tooltip.tooltip-right.tooltip-normal:after,
-.tooltip.tooltip-bottom:after,
-.tooltip.tooltip-top:after {
+.tooltip:after {
   opacity: 0;
 }
 
@@ -2209,6 +2235,11 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 .tooltip.tooltip-right {
   -webkit-animation: tooltip-right-anim 200ms ease-in-out;
   animation: tooltip-right-anim 200ms ease-in-out;
+}
+
+.tooltip.tooltip-left {
+  -webkit-animation: tooltip-left-anim 200ms ease-in-out;
+  animation: tooltip-left-anim 200ms ease-in-out;
 }
 
 
@@ -3871,6 +3902,13 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 
 
 /* Rich Presence END */
+
+
+/* https://github.com/Snazzah/BeautifulDiscordSnippets/tree/master/TitleBlocks */
+
+.markup .hljs::before {
+  border-radius: 5px 5px 0 0;
+}
 
 
 /* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
