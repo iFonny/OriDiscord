@@ -41,6 +41,7 @@
   color: #fff;
 }
 
+
 /* A uncomment sur windows j'imagine (font titleBar)
 
 #app-mount div[class*="titleBar-"] {
@@ -1851,13 +1852,28 @@ div[class*="autocomplete-"]:after {
   color: #fff;
 }
 
-.channel-text-area-default {
+.channel-text-area-default,
+div[class*="channelTextArea-"] {
   margin: 0 0 0;
 }
 
-.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
+.theme-dark textarea[class*="textArea-"],
+.theme-dark div[class*="inner-"] {
+  background: transparent;
+}
+
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
+div[class*="channelTextAreaEnabledNoAttach"] {
   border-radius: 0;
-  margin-bottom: -30px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  background-color: var(--dark-primary);
+}
+
+.theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
+  border-radius: 0;
+  margin-bottom: 0px;
   padding-top: 5px;
   padding-bottom: 4px;
   background-color: var(--dark-primary);
@@ -1938,6 +1954,10 @@ div[class*="autocomplete-"] li:hover {
 
 .theme-dark div[class*="title-"] {
   background: var(--dark-primary);
+}
+
+.theme-dark div[class*="info-"] div[class*="title-"] {
+  background: transparent;
 }
 
 .chat .jump-to-present-bar {
@@ -3960,6 +3980,13 @@ div[class*="modal-"] div[class*="header-"]+div[class*="scrollerWrap-"] {
 
 
 /* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
+
+
+/* DiscordInjections Main CSS */
+
+.theme-dark .ellipsis-1MzbWB.primary400-1OkqpL.di-autocomplete-commandinfo {
+  background-color: transparent !important;
+}
 
 
 /* Snazzah - DiscordBots */
