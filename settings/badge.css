@@ -16,7 +16,7 @@
 .guilds-wrapper .guilds .guild.selected.unread:before,
 .guilds-wrapper .guilds .guild.unread:before {
     -webkit-transform: translate(47px, 10px) scale(1.2);
-    transform: translate(47px, 10px) scale(1.2);
+    transform: translate(47px, 10px) scale(1.2) !important;
     border-style: solid;
     border-width: 1px;
     border-color: var(--notifborder);
@@ -24,7 +24,6 @@
 
 .guilds-wrapper .guilds .guild.selected.unread:before {
     visibility: visible !important;
-    -webkit-transform: translate(47px, 10px) scale(1.2);
-    transform: translate(37px, 37px) scale(1.2);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, .15);
+    -webkit-transform: translate(47px, 10px) scale(1.2) !important;
+    transform: translate(37px, 37px) scale(1.2) !important;
 }
