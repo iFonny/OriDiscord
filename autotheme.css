@@ -9,9 +9,13 @@
 */
 
 
-/* Settings badges */
+/* Settings notif indic */
 
-@import "https://rawgit.com/iFonny/OriDiscord/propre/settings/badge.css";
+@import "https://rawgit.com/iFonny/OriDiscord/master/settings/indic.css";
+
+/* Gland badge */
+
+@import "https://rawgit.com/iFonny/OriDiscord/master/settings/gland.css";
 
 /*
 ** -------------
@@ -52,6 +56,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.theme-dark .search-popout .option.selected {
+    background-color: #303030;
+}
+
 
 /*
 ** --------------
@@ -64,10 +72,21 @@ body {
     --notifborder: #7A78BD;
 }
 
+
 /* Transparent title bar (mac) */
+
 #app-mount div[class*="titleBar-"] {
     background: transparent !important;
     padding-top: 15px;
+}
+
+
+/* shadow emoji/emote discord */
+
+.emoji,
+.emoji.jumboable {
+    border-radius: 4px;
+    filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.3));
 }
 
 
@@ -78,11 +97,3 @@ body {
 .message-group-blocked-btn {
     display: none;
 }*/
-
-
-/*
-  How to add plugins :D
-  1. Just add any @import from either my PLUGINS.md file or find some other @import stuff
-  2. Add them under this comment
-  3. Enjoy some fun stuff :P
-*/
