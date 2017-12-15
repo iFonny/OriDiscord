@@ -3,6 +3,17 @@
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/theme.css";
 
 /*
+** --------------
+** Theme settings 
+** --------------
+*/
+
+
+/* Settings badges */
+
+@import "https://rawgit.com/iFonny/OriDiscord/propre/settings/badge.css";
+
+/*
 ** ------------------
 ** Discord Background 
 ** ------------------
@@ -36,7 +47,7 @@ body {
 
 /*
 ** --------------
-** Theme settings 
+** Other settings 
 ** --------------
 */
 
@@ -44,10 +55,6 @@ body {
     --notif: #cf0626;
     --notifborder: #7A78BD;
 }
-
-/* Settings badges */
-@import "https://rawgit.com/iFonny/OriDiscord/master/settings/badge.css";
-
 
 
 /*
