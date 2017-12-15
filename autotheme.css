@@ -14,6 +14,22 @@
 @import "https://rawgit.com/iFonny/OriDiscord/propre/settings/badge.css";
 
 /*
+** -------------
+** 2 Guilds/Line 
+** -------------
+*/
+
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/wideGuilds.css";
+
+/*
+** -------------------------
+** DiscordInjections Support 
+** -------------------------
+*/
+
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/DiscordInjections.css";
+
+/*
 ** ------------------
 ** Discord Background 
 ** ------------------
@@ -24,11 +40,11 @@
 /* Settings */
 
 .app {
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(0, 0, 0, 0.60);
 }
 
 body {
-    background: url("./ori_light.jpg");
+    background: url("./ori_dark.jpg");
     /* Advanced settings */
     background-size: cover;
     background-attachment: fixed;
@@ -36,14 +52,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
-/*
-** -------------------------
-** DiscordInjections Support 
-** -------------------------
-*/
-
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/DiscordInjections.css";
 
 /*
 ** --------------
@@ -55,6 +63,21 @@ body {
     --notif: #cf0626;
     --notifborder: #7A78BD;
 }
+
+/* Transparent title bar (mac) */
+#app-mount div[class*="titleBar-"] {
+    background: transparent !important;
+    padding-top: 15px;
+}
+
+
+/* Hide blocked messages */
+
+
+/*
+.message-group-blocked-btn {
+    display: none;
+}*/
 
 
 /*
