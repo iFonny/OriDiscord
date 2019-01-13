@@ -43,9 +43,7 @@
 
 /* Settings */
 
-.app {
-    background: rgba(0, 0, 0, 0.65);
-}
+div[class*="app-"]:first-child { background: rgba(0, 0, 0, 0.65); }
 
 body {
     background: url("https://i.imgur.com/zr6WscV.png");
